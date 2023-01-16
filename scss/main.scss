@@ -1,0 +1,584 @@
+//IMPORTS
+@import "_common";
+@import "_mixins";
+@import "_vars";
+
+//INICIO todos los textos
+
+h1{
+    text-align: $textCenter;
+    color: $colorBeige;
+    font-size: $fontXXLarge;
+    font-family: 'Roboto Serif', serif;
+}
+
+p{
+    text-align: $textCenter;
+    color: $colorPink;
+    font-size: $fontXLarge;
+}
+
+h2{
+    text-align: $textCenter;
+    color: $colorBeige;
+    font-size: $fontXXLarge;
+    font-family: 'Roboto Serif', serif;
+}
+
+h3{
+    text-align: $textLeft;
+    color: $colorBrown;
+    font-size: $fontXXLarge;
+}
+
+label{
+    text-align: $textLeft;
+    color: $colorBeige;
+    font-size: $fontLarge;
+}
+//FIN todos los textos
+
+//INICIO INDEX
+
+.paddingNewDisc{
+    padding: 9% 2%;
+}
+
+.video{
+    width: 100%;
+    height: 400px;
+}
+.mapa{
+    width: 100%;
+    height: 350px;
+}
+
+@media (max-width:992px) {
+    .visitanosContainer {
+        width: 500px;
+    }
+    .visitanosContainer div h3 {
+        text-align: center;
+    }
+    .contactoContainer {
+        width: 500px;
+    }
+    .contactoContainer div h3 {
+        text-align: center;
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .logo_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 300px;
+    }
+    .slide {
+        margin-top: 40px;
+    }
+    .slide img {
+        height: 25vh;
+    }
+    .nuevoDisco {
+        margin-top: 40px;
+    }
+    .nuevoDisco div video{
+        height: 250px;
+    }
+    .nuevoDisco div h1 {
+        font-size: 25px
+    }
+    .nuevoDisco div p {
+        font-size: 20px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+//FIN INDEX
+
+//INICIO TOUR
+
+.container-tour{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "listado img-estadio"
+    "listado onlytable"
+    "themap thevideo";
+}
+
+.listado{
+    grid-area: listado;
+}
+
+.img-estadio{
+    grid-area: img-estadio;
+}
+
+.onlytable{
+    grid-area: onlytable;
+}
+
+.themap{
+    grid-area: themap;
+}
+
+.thevideo{
+    grid-area: thevideo;
+}
+
+.tabla2-tour{
+    width: 100%;
+    height: 350px;
+}
+
+.padding-shows{
+    padding: 5% 5%;
+}
+
+.pad-up{
+    padding-top: 10%;
+}
+
+.pad-right{
+    padding-right: 3%;
+}
+
+@media (max-width:1400px){
+    .alltour{
+        width: 500px;
+        margin: 10px;
+    }
+}
+@media (max-width:1200px){
+    .alltour{
+        width: 400px;
+        margin: 10px;
+    }
+}
+@media (max-width:992px){
+    .container-tour{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .listado{
+        width:100%;
+        max-width:50%;
+    }
+    .img-estadio{
+        width:100%;
+        max-width:50%;
+    }
+    .onlytable{
+        width: 100%;
+        max-width: 50%;
+        height: 300px;
+    }
+}
+
+@media (min-width:320px) and (max-width:576px){
+    .logo_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 300px;
+    }
+    
+    .alltour{
+        width: 300px;
+    }
+
+    h2 a img{
+        width: 300px;
+        max-width: 30%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+//FIN TOUR
+
+//INICIO MERCH
+
+.text-justify{
+    text-align: justify;
+}
+
+.padding-uno{
+    padding: 20px 20px;
+}
+.container-merch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img_item a img {
+    width: 650px;
+    margin: 10px;
+}
+.img_buzos img {
+    width: 98%;
+}
+
+@media (max-width:1400px) {
+    .img_item a img {
+        width: 500px;
+        margin: 10px;
+    }
+}
+@media (max-width:1200px) {
+    .img_item a img {
+        width: 400px;
+        margin: 10px;
+    }
+}
+@media (max-width:992px) {
+    .img_merch_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .img_item a img {
+        width: 500px;
+        margin: 10px;
+    }
+}
+@media (max-width:768px) {
+    .descripcion_merch p {
+        font-size: 1.5rem;
+    }
+    .creaciones_de_casa p {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .logo_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 300px;
+    }
+    .descripcion_merch h1 {
+        font-size: 1.5rem;
+    }
+    .descripcion_merch p {
+        font-size: 1.2rem;
+    }
+    .img_item a img {
+        width: 300px;
+        margin: 10px;
+    }
+    .creaciones_de_casa h2 {
+        font-size: 1.5rem;
+    }
+    .creaciones_de_casa p {
+        font-size: 1.2rem;
+    }
+    .img_buzos img {
+        width: 100%;
+        height: 200px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+//FIN MERCH
+
+//INICIO DISCOGRAFIA
+
+.container-discografia{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    margin: 3% 1%;
+    grid-template-areas:
+    "para rush xyy"
+    "vivalavida vivalavida mylo"
+    "vivalavida vivalavida ghost"
+    "ahead musicof musicof"
+    "everyday musicof musicof"
+    "live2012 live2014 live2018";
+}
+
+.disco-uno{
+    grid-area: para;
+    padding-bottom: 5%;
+}
+
+.disco-dos{
+    grid-area: rush;
+    padding-bottom: 5%;
+}
+
+.disco-tres{
+    grid-area: xyy;
+    padding-bottom: 5%;
+}
+
+.disco-cuatro{
+    grid-area: vivalavida;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.disco-cinco{
+    grid-area: mylo;
+    padding-bottom: 3%;  
+}
+
+.disco-seis{
+    grid-area: ghost;
+    padding-bottom: 5%;
+}
+
+.disco-siete{
+    grid-area: ahead;
+    padding-bottom: 3%;
+}
+
+.disco-ocho{
+    grid-area: everyday;
+    padding-bottom: 5%;
+}
+
+.disco-nueve{
+    grid-area: musicof;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.disco-diez{
+    grid-area: live2012;
+}
+
+.disco-once{
+    grid-area: live2014;
+}
+
+.disco-doce{
+    grid-area: live2018;
+}
+
+@media (max-width:1400px){
+    .alldiscs a {
+        width: 500px;
+        margin: 10px;
+    }
+}
+@media (max-width:1200px){
+    .alldiscs a {
+        width: 400px;
+        margin: 10px;
+    }
+}
+@media (max-width:992px){
+    .container-discografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .disco-cuatro a div img{
+        width:100%;
+        max-width:27rem;
+    }
+    .disco-nueve a div img{
+        width:100%;
+        max-width:27rem;
+    }
+    .card{
+        width:100%;
+        max-width:27rem;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:576px){
+    .logo_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 300px;
+    }
+    
+    .alldiscs a div img{
+        width: 300px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+//FIN DISGRAFÍA
+
+//INICIO GALERÍA
+
+.container-galeria{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2% 2%;
+    grid-template-areas:
+    "number-1 number-2 number-3"
+    "number-4 number-4 number-5"
+    "number-4 number-4 number-6"
+    "number-7 number-9 number-9"
+    "number-8 number-9 number-9"
+    "number-10 number-10 number-10"
+}
+
+.number-1{
+    grid-area: number-1;
+}
+
+.number-2{
+    grid-area: number-2;
+}
+
+.number-3{
+    grid-area: number-3;
+}
+
+.number-4{
+    grid-area: number-4;
+    margin-top: 5%;
+}
+
+.number-5{
+    grid-area: number-5;
+    margin-top: 8%;
+}
+
+.number-6{
+    grid-area: number-6;
+    margin-top: 3%;
+}
+
+.number-7{
+    grid-area: number-7;
+    margin-top: 8%;
+}
+
+.number-8{
+    grid-area: number-8;
+    margin-top: 3%;
+}
+
+.number-9{
+    grid-area: number-9;
+    margin-top: 5%;
+}
+
+.number-10{
+    grid-area: number-10;
+    margin-top: 5%;
+}
+
+@media (max-width:1400px){
+    .alleras a{
+        width: 500px;
+        margin: 10px;
+    }
+}
+@media (max-width:1200px){
+    .alleras a{
+        width: 400px;
+        margin: 10px;
+    }
+}
+@media (max-width:992px){
+    .container-galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .number-4 a div img{
+        width:100%;
+        max-width:25rem;
+    }
+    .number-9 a div img{
+        width:100%;
+        max-width:25rem;
+    }
+    .number-10 a div img{
+        width:100%;
+        max-width:25rem;
+    }
+    .card{
+        width:100%;
+        max-width:25rem;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:576px){
+    .logo_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 300px;
+    }
+    
+    .alleras a div img{
+        width: 300px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+//FIN GALERÍA

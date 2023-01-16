@@ -1,0 +1,13 @@
+//buttons (Index)
+.button{
+    border: none;
+    background: linear-gradient(to top, dodgerblue, beige);
+    width: 100px;
+    height: 30px;
+}
+
+.button:hover{
+    background: linear-gradient(to top, beige, dodgerblue);
+    transition: all 1s;
+}
+

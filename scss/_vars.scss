@@ -1,0 +1,30 @@
+//colors
+$colorBeige:beige;
+$colorPink:rgba(255,0,187);
+$colorBrown:brown;
+
+//size
+$fontXXLarge: xx-large;
+$fontXLarge: x-large;
+$fontLarge: large;
+
+//align
+$textCenter: center;
+$textLeft: left;
+
+
+
+//efectos discografía y galería
+.transform:hover{
+    transform: translate(-20px,10px);
+    transition: all 1s;
+}
+
+.scale:hover{
+    transform: scale(1.02);
+    transition: all 1s;
+}
+
+
+
+
