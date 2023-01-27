@@ -13,7 +13,6 @@ $textCenter: center;
 $textLeft: left;
 
 
-
 //efectos discografía y galería
 .transform:hover{
     transform: translate(-20px,10px);
@@ -23,6 +22,11 @@ $textLeft: left;
 .scale:hover{
     transform: scale(1.02);
     transition: all 1s;
+}
+
+.flexDG{
+    display: flex;
+    flex-direction: row;
 }
 
 //buttons (Index)
@@ -38,6 +42,16 @@ $textLeft: left;
     transition: all 1s;
 }
 
+.buttonDos{
+    border-style:inset;
+    background: linear-gradient(to top, red, beige);
+    width: 250px;
+    height: 70px;
+    font-size: $fontXLarge;
+}
 
-
+.buttonDos:hover{
+    background: linear-gradient(to top, beige, red);
+    transition: all 1s;
+}
 

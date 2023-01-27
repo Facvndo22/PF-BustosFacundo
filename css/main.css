@@ -26,6 +26,12 @@ footer a {
   margin: 0 5px;
 }
 
+.error {
+  background-image: url(../images/funnyChris.jpeg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
 body header nav div {
   border-top-radius: 10px;
   border-bottom-radius: 20px;
@@ -42,6 +48,11 @@ body header nav div {
   transition: all 1s;
 }
 
+.flexDG {
+  display: flex;
+  flex-direction: row;
+}
+
 .button {
   border: none;
   background: linear-gradient(to top, dodgerblue, beige);
@@ -51,6 +62,19 @@ body header nav div {
 
 .button:hover {
   background: linear-gradient(to top, beige, dodgerblue);
+  transition: all 1s;
+}
+
+.buttonDos {
+  border-style: inset;
+  background: linear-gradient(to top, red, beige);
+  width: 250px;
+  height: 70px;
+  font-size: x-large;
+}
+
+.buttonDos:hover {
+  background: linear-gradient(to top, beige, red);
   transition: all 1s;
 }
 
@@ -86,16 +110,20 @@ label {
   font-size: large;
 }
 
-.paddingNewDisc {
-  padding: 9% 2%;
+.dispflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video {
+section .paddingNewDisc {
+  padding: 9% 2%;
+}
+section .video {
   width: 100%;
   height: 400px;
 }
-
-.mapa {
+section .mapa {
   width: 100%;
   height: 350px;
 }
@@ -152,46 +180,35 @@ label {
 }
 .container-tour {
   display: grid;
-  width: 100%;
+  width: 90%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "listado img-estadio" "listado onlytable" "themap thevideo";
+  margin: 3% 5%;
 }
-
-.listado {
+.container-tour .listado {
   grid-area: listado;
 }
-
-.img-estadio {
+.container-tour .img-estadio {
   grid-area: img-estadio;
 }
-
-.onlytable {
+.container-tour .onlytable {
   grid-area: onlytable;
 }
-
-.themap {
+.container-tour .themap {
   grid-area: themap;
+  padding-top: 3%;
+  padding-right: 3%;
 }
-
-.thevideo {
+.container-tour .thevideo {
   grid-area: thevideo;
+  padding-top: 3%;
 }
-
-.tabla2-tour {
+.container-tour .tabla2-tour {
   width: 100%;
   height: 350px;
 }
-
-.padding-shows {
+.container-tour .padding-shows {
   padding: 5% 5%;
-}
-
-.pad-up {
-  padding-top: 10%;
-}
-
-.pad-right {
-  padding-right: 3%;
 }
 
 @media (max-width: 1400px) {
@@ -253,12 +270,12 @@ label {
     flex-wrap: wrap;
   }
 }
-.text-justify {
-  text-align: justify;
-}
-
 .padding-uno {
   padding: 20px 20px;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .container-merch {
@@ -269,13 +286,9 @@ label {
   flex-wrap: wrap;
 }
 
-.img_item a img {
+div .img_item a img {
   width: 650px;
   margin: 10px;
-}
-
-.img_buzos img {
-  width: 98%;
 }
 
 @media (max-width: 1400px) {
@@ -302,6 +315,10 @@ label {
     width: 500px;
     margin: 10px;
   }
+  .img_buzos img {
+    width: 85%;
+    height: 350px;
+  }
 }
 @media (max-width: 768px) {
   .descripcion_merch p {
@@ -309,6 +326,10 @@ label {
   }
   .creaciones_de_casa p {
     font-size: 1.5rem;
+  }
+  .img_buzos img {
+    width: 85%;
+    height: 350px;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -351,68 +372,57 @@ label {
 }
 .container-discografia {
   display: grid;
-  width: 100%;
+  width: 90%;
   grid-template-columns: repeat(3, 1fr);
-  margin: 3% 1%;
+  margin: 3% 5%;
   grid-template-areas: "para rush xyy" "vivalavida vivalavida mylo" "vivalavida vivalavida ghost" "ahead musicof musicof" "everyday musicof musicof" "live2012 live2014 live2018";
 }
 
-.disco-uno {
+div .disco-uno {
   grid-area: para;
   padding-bottom: 5%;
 }
-
-.disco-dos {
+div .disco-dos {
   grid-area: rush;
   padding-bottom: 5%;
 }
-
-.disco-tres {
+div .disco-tres {
   grid-area: xyy;
   padding-bottom: 5%;
 }
-
-.disco-cuatro {
+div .disco-cuatro {
   grid-area: vivalavida;
   padding-top: 2%;
   padding-bottom: 5%;
 }
-
-.disco-cinco {
+div .disco-cinco {
   grid-area: mylo;
   padding-bottom: 3%;
 }
-
-.disco-seis {
+div .disco-seis {
   grid-area: ghost;
   padding-bottom: 5%;
 }
-
-.disco-siete {
+div .disco-siete {
   grid-area: ahead;
   padding-bottom: 3%;
 }
-
-.disco-ocho {
+div .disco-ocho {
   grid-area: everyday;
   padding-bottom: 5%;
 }
-
-.disco-nueve {
+div .disco-nueve {
   grid-area: musicof;
   padding-top: 2%;
   padding-bottom: 5%;
 }
-
-.disco-diez {
+div .disco-diez {
   grid-area: live2012;
 }
-
-.disco-once {
+div .disco-once {
   grid-area: live2014;
 }
-
-.disco-doce {
+div .disco-doce {
   grid-area: live2018;
 }
 
@@ -438,15 +448,15 @@ label {
   }
   .disco-cuatro a div img {
     width: 100%;
-    max-width: 27rem;
+    max-width: 20rem;
   }
   .disco-nueve a div img {
     width: 100%;
-    max-width: 27rem;
+    max-width: 20rem;
   }
   .card {
     width: 100%;
-    max-width: 27rem;
+    max-width: 20rem;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -462,6 +472,14 @@ label {
   .alldiscs a div img {
     width: 300px;
   }
+  .card {
+    width: 100%;
+    max-width: 20rem;
+  }
+  .card {
+    width: 100%;
+    max-width: 18.9rem;
+  }
   .footer {
     display: flex;
     flex-direction: row;
@@ -472,55 +490,46 @@ label {
 }
 .container-galeria {
   display: grid;
-  width: 100%;
+  width: 90%;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2% 2%;
+  margin: 3% 5%;
   grid-template-areas: "number-1 number-2 number-3" "number-4 number-4 number-5" "number-4 number-4 number-6" "number-7 number-9 number-9" "number-8 number-9 number-9" "number-10 number-10 number-10";
 }
 
-.number-1 {
+div .number-1 {
   grid-area: number-1;
 }
-
-.number-2 {
+div .number-2 {
   grid-area: number-2;
 }
-
-.number-3 {
+div .number-3 {
   grid-area: number-3;
 }
-
-.number-4 {
+div .number-4 {
   grid-area: number-4;
   margin-top: 5%;
 }
-
-.number-5 {
+div .number-5 {
   grid-area: number-5;
   margin-top: 8%;
 }
-
-.number-6 {
+div .number-6 {
   grid-area: number-6;
   margin-top: 3%;
 }
-
-.number-7 {
+div .number-7 {
   grid-area: number-7;
   margin-top: 8%;
 }
-
-.number-8 {
+div .number-8 {
   grid-area: number-8;
   margin-top: 3%;
 }
-
-.number-9 {
+div .number-9 {
   grid-area: number-9;
   margin-top: 5%;
 }
-
-.number-10 {
+div .number-10 {
   grid-area: number-10;
   margin-top: 5%;
 }
@@ -547,19 +556,19 @@ label {
   }
   .number-4 a div img {
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
   }
   .number-9 a div img {
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
   }
   .number-10 a div img {
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
   }
   .card {
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -575,6 +584,10 @@ label {
   .alleras a div img {
     width: 300px;
   }
+  .card {
+    width: 100%;
+    max-width: 18.9rem;
+  }
   .footer {
     display: flex;
     flex-direction: row;
@@ -582,6 +595,15 @@ label {
     align-items: center;
     flex-wrap: wrap;
   }
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20% 0%;
+}
+.error .errorbutton {
+  padding: 5% 0%;
 }
 
 /*# sourceMappingURL=main.css.map */
