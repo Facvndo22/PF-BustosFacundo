@@ -127,6 +127,7 @@ section{
     margin: 3% 5%;
     .listado{
         grid-area: listado;
+        padding-right: 8%;
     }
     .img-estadio{
         grid-area: img-estadio;
@@ -149,12 +150,7 @@ section{
     }
 }
 
-@media (max-width:1400px){
-    .alltour{
-        width: 500px;
-        margin: 10px;
-    }
-}
+
 @media (max-width:1200px){
     .alltour{
         width: 400px;
@@ -171,15 +167,13 @@ section{
     }
     .listado{
         width:100%;
-        max-width:50%;
     }
+
     .img-estadio{
         width:100%;
-        max-width:50%;
     }
     .onlytable{
         width: 100%;
-        max-width: 50%;
         height: 300px;
     }
 }
@@ -399,19 +393,6 @@ div{
     }
 }
 
-
-@media (max-width:1400px){
-    .alldiscs a {
-        width: 500px;
-        margin: 10px;
-    }
-}
-@media (max-width:1200px){
-    .alldiscs a {
-        width: 400px;
-        margin: 10px;
-    }
-}
 @media (max-width:992px){
     .container-discografia {
         display: flex;
@@ -527,19 +508,6 @@ div{
     }
 }
 
-
-@media (max-width:1400px){
-    .alleras a{
-        width: 500px;
-        margin: 10px;
-    }
-}
-@media (max-width:1200px){
-    .alleras a{
-        width: 400px;
-        margin: 10px;
-    }
-}
 @media (max-width:992px){
     .container-galeria{
         display: flex;
