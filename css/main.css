@@ -352,7 +352,7 @@ div .img_item a img {
   .img_item a img {
     width: 100%;
     max-width: 80%;
-    height: 190px;
+    height: 180px;
   }
   .centerinmobile {
     text-align: center;
@@ -365,7 +365,7 @@ div .img_item a img {
   }
   .img_buzos img {
     width: 80%;
-    height: 180px;
+    height: 170px;
   }
 }
 .container-discografia {
@@ -546,6 +546,13 @@ div .number-10 {
 }
 .error .errorbutton {
   padding: 5% 0%;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .imgerror {
+    width: 100%;
+    max-width: 60%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

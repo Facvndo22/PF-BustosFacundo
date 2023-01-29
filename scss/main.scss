@@ -261,7 +261,7 @@ div{
     .img_item a img {
         width: 100%;
         max-width: 80%;
-        height: 190px;
+        height: 180px;
     }
     .centerinmobile{
         text-align: center;
@@ -274,7 +274,7 @@ div{
     }
     .img_buzos img {
         width: 80%;
-        height: 180px;
+        height: 170px;
     }
 }
 //FIN MERCH
@@ -495,6 +495,13 @@ div{
     padding: 20% 0%;
     .errorbutton{
         padding: 5% 0%;
+    }
+}
+
+@media (min-width:320px) and (max-width:576px){
+    .imgerror{
+        width: 100%;
+        max-width: 60%;
     }
 }
 //FIN 404
