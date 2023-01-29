@@ -261,7 +261,7 @@ div{
     .img_item a img {
         width: 100%;
         max-width: 80%;
-        height: 280px;
+        height: 190px;
     }
     .centerinmobile{
         text-align: center;
@@ -274,7 +274,7 @@ div{
     }
     .img_buzos img {
         width: 80%;
-        height: 200px;
+        height: 180px;
     }
 }
 //FIN MERCH
@@ -444,10 +444,6 @@ div{
     }
 }
 
-.greyscale{
-    color: grayscale($color: #000000);
-}
-
 @media (max-width:992px){
     .container-galeria{
         display: flex;
@@ -489,13 +485,16 @@ div{
 //FIN GALERÍA
 
 //404
+
 .error{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 20% 0%;
     .errorbutton{
         padding: 5% 0%;
     }
 }
-//FIN 404    
+//FIN 404

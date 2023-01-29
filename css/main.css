@@ -352,7 +352,7 @@ div .img_item a img {
   .img_item a img {
     width: 100%;
     max-width: 80%;
-    height: 280px;
+    height: 190px;
   }
   .centerinmobile {
     text-align: center;
@@ -365,7 +365,7 @@ div .img_item a img {
   }
   .img_buzos img {
     width: 80%;
-    height: 200px;
+    height: 180px;
   }
 }
 .container-discografia {
@@ -499,10 +499,6 @@ div .number-10 {
   margin-top: 5%;
 }
 
-.greyscale {
-  color: black;
-}
-
 @media (max-width: 992px) {
   .container-galeria {
     display: flex;
@@ -544,6 +540,8 @@ div .number-10 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 20% 0%;
 }
 .error .errorbutton {
