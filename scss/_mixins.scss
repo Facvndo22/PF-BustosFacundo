@@ -1,0 +1,31 @@
+
+@mixin borderRadius($radius1, $radius2){
+    border-top-radius: $radius1;
+    border-bottom-radius: $radius2;
+    border: solid gray 3px;
+}
+
+h1{
+    @include borderRadius(10px, 20px);
+}
+
+@mixin flex($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+.dispflex{
+    @include flex(column, center, center, nowrap)
+}
+.logo_menu{
+    @include flex(row, center, center, nowrap)
+}
+.logo_mobile{
+    @include flex(column, center, center, nowrap)
+}
+.footer{
+    @include flex(row, center, center, wrap)
+}

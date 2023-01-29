@@ -12,18 +12,14 @@ body{
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px 0px;
     margin: 5px 0px;
-}
-
-footer a img{
-    width: 80px;
-}
-footer a{
-    margin: 0 5px;
+    a{
+        margin: 0 5px;
+    }
+    a img{
+        width: 80px;
+    }
 }
 
 .error{
@@ -31,8 +27,3 @@ footer a{
     background-repeat: repeat;
     background-attachment: fixed;
 }
-
-
-
-
-

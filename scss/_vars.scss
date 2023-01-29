@@ -35,23 +35,16 @@ $textLeft: left;
     background: linear-gradient(to top, dodgerblue, beige);
     width: 100px;
     height: 30px;
+    &:hover{
+        background: linear-gradient(to top, beige, dodgerblue);
+        transition: all 1s;
+    }
 }
 
-.button:hover{
-    background: linear-gradient(to top, beige, dodgerblue);
-    transition: all 1s;
-}
-
+//button (404)
 .buttonDos{
-    border-style:inset;
-    background: linear-gradient(to top, red, beige);
-    width: 250px;
+    @extend .button;
+    width: 200px;;
     height: 70px;
-    font-size: $fontXLarge;
+    border-radius: 20px;
 }
-
-.buttonDos:hover{
-    background: linear-gradient(to top, beige, red);
-    transition: all 1s;
-}
-
