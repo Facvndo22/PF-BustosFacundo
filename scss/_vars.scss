@@ -29,6 +29,23 @@ $textLeft: left;
     flex-direction: row;
 }
 
+.alleras a div img{
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover{
+        filter: grayscale(0%);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+}
+
 //buttons (Index)
 .button{
     border: none;

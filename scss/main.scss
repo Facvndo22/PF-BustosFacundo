@@ -444,6 +444,10 @@ div{
     }
 }
 
+.greyscale{
+    color: grayscale($color: #000000);
+}
+
 @media (max-width:992px){
     .container-galeria{
         display: flex;
